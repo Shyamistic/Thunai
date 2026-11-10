@@ -3,7 +3,8 @@
 FROM node:22-slim
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci
+# --ignore-scripts: skip the ffmpeg download (only used locally to render the demo video)
+RUN npm ci --ignore-scripts
 COPY . .
 ARG VITE_CARTO_KEY=""
 ENV VITE_CARTO_KEY=$VITE_CARTO_KEY

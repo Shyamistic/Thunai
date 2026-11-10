@@ -33,7 +33,8 @@ interface Lines {
 
 const S: Record<L, Lines> = {
   ta: {
-    greeting: "வணக்கம், இது சென்னை மாநகராட்சி 1913 வெள்ள உதவி line. நான் துணை பேசுறேன். <pauses> நீங்க எந்த area-ல இருக்கீங்க, அங்க என்ன நடக்குதுன்னு சொல்லுங்க.",
+    // kept short on purpose: every second of greeting is a second a caller in danger waits
+    greeting: "வணக்கம், நான் துணை, சென்னை வெள்ள உதவி. <pauses> எந்த area-ல இருக்கீங்க, என்ன நடக்குது, சொல்லுங்க.",
     askLocality: "<pauses> நீங்க எந்த area-ல இருக்கீங்க? பக்கத்துல ஏதாவது landmark இருந்தா சொல்லுங்க.",
     askLocalityAgain: "மன்னிக்கணும், area பேர் சரியா கேக்கல. <pauses> Area பேரும், பக்கத்துல ஒரு landmark-உம் மெதுவா சொல்லுங்க.",
     readBack: (place, lm) => `நீங்க சொன்னது ${place}${lm ? `, ${lm} பக்கத்துல` : ""}. <pauses> இது சரியா?`,

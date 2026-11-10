@@ -198,9 +198,9 @@ const SCENARIOS = [
     voice: "Devansh",
     lang: "ta-IN",
     lines: [
-      "ஹலோ, நான் Pallikaranai-ல இருந்து பேசுறேன், Velachery main road பக்கத்துல. வீட்டுக்குள்ள water waist level வந்துடுச்சு, அம்மா bedridden, current இல்ல.",
+      "ஹலோ, நான் Pallikaranai-ல இருந்து பேசுறேன், Velachery main road பக்கத்துல. வீட்டுக்குள்ள water waist level வந்துடுச்சு, அம்மா bedridden, current இல்ல. மூணு பேர் இருக்கோம், boat வேணும்.",
       "ஆமா, சரிதான்.",
-      "நாங்க மூணு பேர் இருக்கோம், boat வேணும்.",
+      "சீக்கிரம் வாங்க, ப்ளீஸ்.",
     ],
   },
   {

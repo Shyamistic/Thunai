@@ -293,6 +293,8 @@ export class Speaker {
         resolve();
       };
       this.current = src;
+      // timeline for the recorded demo video (scripts/make-video.ts rebuilds the soundtrack from it)
+      (window as unknown as { __thunaiAudio?: { url: string; t: number }[] }).__thunaiAudio?.push({ url, t: Date.now() });
       src.start();
     });
   }

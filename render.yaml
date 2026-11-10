@@ -5,7 +5,8 @@ services:
     name: thunai-1913
     runtime: node
     plan: free
-    buildCommand: npm ci --include=dev && npm run build
+    # --ignore-scripts skips the ffmpeg download (only used to make the demo video locally)
+    buildCommand: npm ci --include=dev --ignore-scripts && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
     envVars:

@@ -93,7 +93,10 @@ npm run backlog        # send them through one Prisma v3.0 Batch job and cache t
 npm run eval           # the noise lab (about 150 short Prisma calls)
 npx tsx scripts/sim-call.ts      # a full noisy phone call against the API, no browser needed
 npx tsx scripts/e2e.ts pallikaranai   # drive the real UI in local Chrome and save screenshots
+npx tsx scripts/make-video.ts         # record the 60 s demo video with sound → video/thunai-1913-demo.mp4
 ```
+
+`make-video.ts` drives the real app in headless Chrome with a scripted caller and on-screen captions, and logs when each clip starts. It then rebuilds the soundtrack from those exact clips (the caller on a phone-band line under storm noise, Thunai clean, a rain bed throughout) and trims network waits between turns to about 1 s.
 
 In the UI, pick **Caller: live microphone** to speak yourself, or a **Scripted** caller for a repeatable demo. Use **Clear / Rain 10 dB / Cyclone 5 dB** and **8 kHz phone line** to choose what Prisma hears.
 

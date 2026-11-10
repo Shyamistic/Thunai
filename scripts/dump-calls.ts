@@ -1,4 +1,5 @@
 // Print the turn timeline of every call ticket on the board (debug helper).
+export {};
 const tickets = (await (await fetch("http://localhost:8787/api/tickets")).json()) as {
   id: string;
   source: string;

@@ -10,6 +10,7 @@ import { Queue } from "./components/Queue.tsx";
 import { TicketDrawer } from "./components/TicketDrawer.tsx";
 import { BacklogCard } from "./components/BacklogCard.tsx";
 import { LabPage } from "./pages/LabPage.tsx";
+import { HowPage } from "./pages/HowPage.tsx";
 
 function ControlRoom({ tickets, fresh, backlog, meta }: { tickets: Ticket[]; fresh: string | null; backlog: ReturnType<typeof useTickets>["backlog"]; meta: Meta | null }) {
   const [liveId, setLiveId] = useState<string | null>(null);
@@ -50,7 +51,14 @@ export default function App() {
       <Routes>
         <Route path="/" element={<ControlRoom tickets={tickets} fresh={fresh} backlog={backlog} meta={meta} />} />
         <Route path="/lab" element={<LabPage meta={meta} />} />
+        <Route path="/how" element={<HowPage meta={meta} />} />
       </Routes>
+      {/* the control room is a desk tool; on a phone, say so instead of breaking the layout */}
+      <div className="fixed inset-0 z-[3000] hidden flex-col items-center justify-center gap-3 bg-ink-950 p-8 text-center max-[1100px]:flex">
+        <div className="ta text-[28px] font-semibold text-jasmine">துணை</div>
+        <div className="font-display text-[28px] font-extrabold tracking-wide">THUNAI 1913</div>
+        <p className="max-w-[340px] text-[13px] leading-relaxed text-mist">The control room is built for a call-centre desk. Open it on a laptop or desktop screen, at least 1100 px wide.</p>
+      </div>
     </div>
   );
 }

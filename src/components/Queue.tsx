@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { Phone, MessageSquareText, Users, Layers } from "lucide-react";
+import { Phone, MessageSquareText, Users, Layers, Download } from "lucide-react";
 import { ago, useNow } from "../lib/api.ts";
 import { HAZARD_LABEL, NEED_LABEL, PRIORITY, VULN_LABEL, type Ticket } from "../lib/types.ts";
 import { WaterGauge } from "./WaterGauge.tsx";
@@ -96,10 +96,13 @@ export function Queue({ tickets, selected, onSelect, zones }: { tickets: Ticket[
             <div className="label">Triage queue</div>
             <div className="font-display text-[24px] font-extrabold leading-none tracking-wide">RANKED BY RULES</div>
           </div>
-          <div className="text-right font-mono text-[10.5px] text-fog">
-            {shown.length} shown
-            <br />
-            model proposes · code decides
+          <div className="flex flex-col items-end gap-1 text-right font-mono text-[10.5px] text-fog">
+            <span>
+              {shown.length} shown · model proposes, code decides
+            </span>
+            <a href="/api/tickets.csv" className="flex items-center gap-1 rounded-full border border-line px-2 py-0.5 text-mist hover:border-marigold hover:text-marigold" title="Download the queue for field teams">
+              <Download size={11} /> Export CSV
+            </a>
           </div>
         </div>
         <div className="mt-3 flex items-center gap-1">

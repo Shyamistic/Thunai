@@ -1,0 +1,19 @@
+# One-click deploy on Render: New → Blueprint → pick this repo.
+# Set GNANI_API_KEY and VITE_CARTO_KEY in the dashboard when prompted (they are not stored here).
+services:
+  - type: web
+    name: thunai-1913
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: PUBLIC_DEMO
+        value: "1"
+      - key: GNANI_API_KEY
+        sync: false
+      - key: VITE_CARTO_KEY
+        sync: false

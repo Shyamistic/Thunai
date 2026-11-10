@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
-import { Radio, FlaskConical, ShieldAlert } from "lucide-react";
+import { Radio, FlaskConical, ShieldAlert, Workflow } from "lucide-react";
 import { Wordmark } from "./Brand.tsx";
 import { useNow } from "../lib/api.ts";
 import type { Ticket } from "../lib/types.ts";
@@ -74,6 +74,7 @@ export function TopBar({ tickets }: { tickets: Ticket[] }) {
           {[
             { to: "/", label: "Control room", icon: Radio },
             { to: "/lab", label: "Noise lab", icon: FlaskConical },
+            { to: "/how", label: "How it works", icon: Workflow },
           ].map(({ to, label, icon: Icon }) => (
             <NavLink
               key={to}

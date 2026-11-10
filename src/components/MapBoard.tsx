@@ -5,6 +5,8 @@ import { PRIORITY, type Meta, type Ticket } from "../lib/types.ts";
 import { RainCanvas } from "./RainCanvas.tsx";
 
 const CENTER: [number, number] = [13.0, 80.205];
+// CARTO Dark Matter when a key is configured; Esri dark gray otherwise (no key needed)
+const CARTO_KEY = import.meta.env.VITE_CARTO_KEY as string | undefined;
 
 function pinIcon(t: Ticket, isNew: boolean, selected: boolean) {
   const color = t.status === "resolved" ? "#6b8089" : PRIORITY[t.priority].hex;
@@ -56,13 +58,24 @@ export function MapBoard({
   return (
     <div className="panel relative h-full min-h-0 overflow-hidden">
       <MapContainer center={CENTER} zoom={11.4} zoomSnap={0.2} zoomControl={false} attributionControl className="h-full w-full">
-        <TileLayer
-          url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"
-          attribution="Tiles &copy; Esri, HERE, Garmin, &copy; OpenStreetMap contributors"
-          className="tiles-base"
-          maxZoom={16}
-        />
-        <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}" className="tiles-ref" maxZoom={16} />
+        {CARTO_KEY ? (
+          <TileLayer
+            url={`https://basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png?key=${CARTO_KEY}`}
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+            className="tiles-carto"
+            maxZoom={19}
+          />
+        ) : (
+          <>
+            <TileLayer
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+              attribution="Tiles &copy; Esri, HERE, Garmin, &copy; OpenStreetMap contributors"
+              className="tiles-base"
+              maxZoom={16}
+            />
+            <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}" className="tiles-ref" maxZoom={16} />
+          </>
+        )}
         {meta?.localities
           .filter((l) => l.floodProne)
           .map((l) => (

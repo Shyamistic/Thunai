@@ -24,6 +24,26 @@ export interface CallSession {
 }
 
 const sessions = new Map<string, CallSession>();
+const lastSeen = new Map<string, number>();
+
+// A caller who hangs up without "End call" (closed tab, dropped line) must not stay "ON CALL".
+setInterval(() => {
+  const cutoff = Date.now() - 3 * 60_000;
+  for (const [id, s] of sessions) if ((lastSeen.get(id) ?? s.startedAt) < cutoff) endCall(s);
+}, 30_000).unref();
+// Tickets left "live" by a previous server run are closed (or dropped if empty) at startup.
+setTimeout(() => {
+  for (const t of [...store.tickets.values()]) {
+    if (t.status !== "live") continue;
+    if (!t.transcript.some((x) => x.role === "caller")) {
+      store.tickets.delete(t.id);
+      store.emit("remove", { id: t.id });
+    } else {
+      t.status = "open";
+      store.upsert(t);
+    }
+  }
+}, 0);
 
 export function getSession(id: string): CallSession | undefined {
   return sessions.get(id);
@@ -161,6 +181,7 @@ export interface TurnResult {
 
 export async function handleCallerTurn(s: CallSession, transcript: string, detected: string | null, meta: { audio?: string; sttMs?: number | null; roundTripMs?: number; noise?: string }): Promise<TurnResult> {
   const t = store.tickets.get(s.ticketId)!;
+  lastSeen.set(s.id, Date.now());
   s.callerTurns += 1;
   const lang = detected ?? TTS_LANG[s.lang];
   // Language ID on a two-word "yes" is unreliable; only a real sentence may switch the call's language.
@@ -213,6 +234,7 @@ export function endCall(s: CallSession): Ticket | undefined {
   const t = store.tickets.get(s.ticketId);
   s.closed = true;
   sessions.delete(s.id);
+  lastSeen.delete(s.id);
   if (!t) return undefined;
   if (t.status === "live") {
     if (!t.locality && t.transcript.filter((x) => x.role === "caller").length === 0) {

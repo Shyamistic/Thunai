@@ -20,6 +20,30 @@ mkdirSync(REC_DIR, { recursive: true });
 
 const KEYTERMS = buildKeyterms();
 const VOICE = "Kalpana";
+const PUBLIC = process.env.PUBLIC_DEMO === "1";
+
+// ------------------------------------------------------------- per-visitor limits (public demo)
+// Protects the programme credits when the demo is hosted: fixed windows per IP and route group.
+const buckets = new Map<string, { n: number; reset: number }>();
+function limit(group: string, max: number, windowMs: number): express.RequestHandler {
+  return (req, res, next) => {
+    if (!PUBLIC) return next();
+    const ip = String(req.headers["x-forwarded-for"] ?? req.socket.remoteAddress ?? "?").split(",")[0].trim();
+    const key = `${group}:${ip}`;
+    const now = Date.now();
+    const b = buckets.get(key);
+    if (!b || b.reset < now) buckets.set(key, { n: 1, reset: now + windowMs });
+    else if (++b.n > max) {
+      res.set("Retry-After", String(Math.ceil((b.reset - now) / 1000)));
+      return void res.status(429).json({ error: `Demo limit reached for this visitor. Try again in ${Math.ceil((b.reset - now) / 60000)} min.` });
+    }
+    next();
+  };
+}
+setInterval(() => {
+  const now = Date.now();
+  for (const [k, b] of buckets) if (b.reset < now) buckets.delete(k);
+}, 60_000).unref();
 
 async function speak(text: string, lang: string) {
   const r = await synthesize(text, { voice: VOICE, language: lang });
@@ -37,7 +61,7 @@ const wrap =
     });
 
 app.get("/api/health", (_req, res) => {
-  res.json({ ok: true, gnaniKey: Boolean(env.gnaniKey), llm: llmEnabled(), keyterms: KEYTERMS.length, voice: VOICE, models: { stt: "prisma-v3.0", tts: "timbre-v3.0" } });
+  res.json({ ok: true, gnaniKey: Boolean(env.gnaniKey), llm: llmEnabled(), keyterms: KEYTERMS.length, voice: VOICE, publicDemo: PUBLIC, models: { stt: "prisma-v3.0", tts: "timbre-v3.0" } });
 });
 
 app.get("/api/meta", (_req, res) => {
@@ -70,7 +94,23 @@ app.patch("/api/tickets/:id", (req, res) => {
   res.json(t);
 });
 
-app.post("/api/tickets/:id/callback", wrap(async (req, res) => {
+/** Officer export: the open queue as CSV, in the same order as the board. */
+app.get("/api/tickets.csv", (_req, res) => {
+  const cols = ["id", "priority", "status", "source", "locality", "locality_ta", "zone", "landmark", "lat", "lng", "water_level", "people", "vulnerable", "hazards", "needs", "rules", "language", "created_ist", "caller_synthetic", "transcript"];
+  const esc = (v: unknown) => `"${String(v ?? "").replace(/"/g, '""').replace(/\r?\n/g, " ")}"`;
+  const rows = store.list().map((t) =>
+    [
+      t.id, `P${t.priority}`, t.status, t.source, t.locality?.en, t.locality?.ta, t.locality?.zone, t.landmark, t.lat?.toFixed(5), t.lng?.toFixed(5), t.waterLevel, t.people,
+      t.vulnerable.join("; "), t.hazards.join("; "), t.needs.join("; "), t.rules.map((r) => `${r.id} ${r.label}`).join("; "), t.lang,
+      new Date(t.createdAt).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }), t.caller,
+      t.transcript.filter((x) => x.role === "caller").map((x) => x.text).join(" | "),
+    ].map(esc).join(","),
+  );
+  res.set({ "Content-Type": "text/csv; charset=utf-8", "Content-Disposition": `attachment; filename="thunai-1913-tickets-SYNTHETIC.csv"` });
+  res.send(`\uFEFF${cols.join(",")}\n${rows.join("\n")}\n`);
+});
+
+app.post("/api/tickets/:id/callback", limit("callback", 10, 10 * 60_000), wrap(async (req, res) => {
   const t = store.tickets.get(String(req.params.id));
   if (!t) return void res.status(404).json({ error: "not found" });
   const l = langFromCode(t.lang);
@@ -83,7 +123,7 @@ app.post("/api/tickets/:id/callback", wrap(async (req, res) => {
   res.json({ text: display(text), audio });
 }));
 
-app.post("/api/reset", (_req, res) => {
+app.post("/api/reset", limit("reset", 5, 10 * 60_000), (_req, res) => {
   store.reset();
   res.json({ ok: true });
 });
@@ -104,14 +144,14 @@ app.get("/api/recordings/:file", (req, res) => {
 });
 
 // ------------------------------------------------------------- call flow
-app.post("/api/call/start", wrap(async (_req, res) => {
+app.post("/api/call/start", limit("call", 8, 10 * 60_000), wrap(async (_req, res) => {
   const { session, ticket, text } = startCall();
   const audio = await speak(text, "ta-IN");
   ticket.transcript[ticket.transcript.length - 1].audio = audio.url;
   res.json({ callId: session.id, ticketId: ticket.id, reply: { text: display(text), lang: "ta-IN", audio, step: "greeting" }, ticket });
 }));
 
-app.post("/api/call/:id/turn", upload.single("audio"), wrap(async (req, res) => {
+app.post("/api/call/:id/turn", limit("turn", 50, 10 * 60_000), upload.single("audio"), wrap(async (req, res) => {
   const s = getSession(String(req.params.id));
   if (!s || s.closed) return void res.status(404).json({ error: "call not active" });
   if (!req.file) return void res.status(400).json({ error: "audio missing" });
@@ -220,7 +260,7 @@ app.get("/api/backlog/audio/:file", (req, res) => {
   res.set("Content-Type", "audio/wav").send(readFileSync(p));
 });
 
-app.post("/api/backlog/replay", wrap(async (_req, res) => {
+app.post("/api/backlog/replay", limit("replay", 6, 10 * 60_000), wrap(async (_req, res) => {
   store.emit("backlog", { stage: "replay" });
   const n = await replay();
   store.emit("backlog", { stage: "replayed", n });
@@ -228,6 +268,7 @@ app.post("/api/backlog/replay", wrap(async (_req, res) => {
 }));
 
 app.post("/api/backlog/run", wrap(async (_req, res) => {
+  if (PUBLIC) return void res.status(403).json({ error: "Live Batch runs are disabled on the public demo; replaying the recorded job." });
   res.json({ ok: true, started: true });
   runBatch((p) => store.emit("backlog", p))
     .then(() => replay())

@@ -23,6 +23,8 @@ Built for the Gnani AI **Great Indian AI Internship Challenge 2026**. `#GnaniAI`
 | **Triage board** | A dark map of Chennai with pins coloured by priority, plus a queue sorted by fixed rules. Reports from the same street are grouped. Each ticket shows the code-mixed transcript with the words that became fields highlighted, the rules that fired, and audio playback. Officers can dispatch, resolve, or send a spoken status update in the caller's language. |
 | **Overnight voice notes** | 20 synthetic WhatsApp voice notes go to **one Prisma v3.0 Batch job** with `with_denoise`, `keyterms` and `topic`. The board fills with ranked tickets. Measured: 20 files, 25 s end to end. |
 | **Noise lab** (`/lab`) | Measures whether place names survive a phone line in a storm (results below). |
+| **How it works** (`/how`) | The pipeline, every priority rule, the keyterms sent to Prisma, and the safety boundaries, on one page for reviewers. |
+| **Export** | `Export CSV` on the queue (or `GET /api/tickets.csv`) downloads the ranked queue for field teams, labelled synthetic. |
 
 ### Model proposes, code decides
 
@@ -65,9 +67,21 @@ Requirements: Node.js 20+ and a Gnani API key from [app.gnani.ai/voice](https://
 ```bash
 cd thunai
 npm install
-# put your key in thunai/.env  →  GNANI_API_KEY=...
+cp .env.example .env   # set GNANI_API_KEY (server only) and, optionally, VITE_CARTO_KEY (dark map tiles)
 npm run dev            # API on :8787, UI on http://localhost:5173
+npm test               # 15 tests: extraction, Tamil case endings, priority rules, call flow
 ```
+
+Without `VITE_CARTO_KEY`, the map falls back to Esri's dark gray canvas, which needs no key.
+
+### Deploy a public demo
+
+- **Render:** New → Blueprint → this repo (`render.yaml`). Set `GNANI_API_KEY` and `VITE_CARTO_KEY` when prompted. HTTPS comes built in, which the browser needs for microphone access.
+- **Docker:** `docker build --build-arg VITE_CARTO_KEY=... -t thunai .`, then `docker run -p 8787:8787 -e GNANI_API_KEY=... -e PUBLIC_DEMO=1 thunai`.
+- `PUBLIC_DEMO=1` protects your programme credits:
+  - per-visitor limits: 8 calls, 50 turns, 10 voice updates and 6 backlog replays per 10 minutes
+  - live Batch runs turned off (the recorded job is replayed instead)
+- The Gnani key never reaches the browser. Only the CARTO tile key is in the bundle, because tile keys are browser keys by design.
 
 Optional:
 
@@ -94,6 +108,8 @@ In the UI, pick **Caller: live microphone** to speak yourself, or a **Scripted**
 - Not connected to any emergency service, and not a replacement for one. A real deployment would need GCC's ward data, a telephony trunk (SIP/Exotel), human supervision on every P1, and native-speaker review of the Hindi and Telugu scripts.
 - Coordinates are neighbourhood centroids from a hand-built gazetteer of about 100 areas. There is no street-level geocoding.
 - The Telugu and Hindi prompts have not been reviewed by native speakers.
+- Very short Hindi phrases on this Tamil-first line can come back in Tamil script ("मुझे मदद करो" → "முஜே மதத்துரோ"). Longer sentences are detected correctly.
+- Calls abandoned without "End call" are closed automatically after 3 minutes of silence.
 - Tickets are kept in memory and in a local JSON file, which is fine for a demo but not durable storage.
 
 ## Credits

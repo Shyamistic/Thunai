@@ -11,6 +11,7 @@
     "build": "vite build",
     "start": "tsx server/index.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "tsx --test tests/extract.test.ts tests/triage.test.ts tests/dialog.test.ts",
     "voicenotes": "tsx scripts/make-voicenotes.ts",
     "backlog": "tsx scripts/run-backlog.ts",
     "eval": "tsx scripts/eval-noise.ts"

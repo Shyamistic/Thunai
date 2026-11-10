@@ -46,6 +46,7 @@ export interface Ticket {
 }
 
 const FILE = path.join(CACHE_DIR, "tickets.json");
+const MEMORY_ONLY = process.env.THUNAI_STORE === "memory"; // tests never touch the demo board
 mkdirSync(CACHE_DIR, { recursive: true });
 
 class Store {
@@ -54,7 +55,7 @@ class Store {
   private clients = new Set<Response>();
 
   constructor() {
-    if (existsSync(FILE)) {
+    if (!MEMORY_ONLY && existsSync(FILE)) {
       try {
         const saved = JSON.parse(readFileSync(FILE, "utf8")) as { seq: number; tickets: Ticket[] };
         this.seq = saved.seq;
@@ -108,7 +109,7 @@ class Store {
 
   private persistTimer: NodeJS.Timeout | null = null;
   private persist(): void {
-    if (this.persistTimer) return;
+    if (MEMORY_ONLY || this.persistTimer) return;
     this.persistTimer = setTimeout(() => {
       this.persistTimer = null;
       writeFileSync(FILE, JSON.stringify({ seq: this.seq, tickets: [...this.tickets.values()] }));

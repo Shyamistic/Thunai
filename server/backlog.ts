@@ -73,11 +73,14 @@ export async function runBatch(onProgress: (p: Record<string, unknown>) => void)
   }
 }
 
-/** Turn cached batch transcripts into tickets, one every ~350 ms so the board visibly fills. */
-export async function replay(): Promise<number> {
+/** Turn cached batch transcripts into tickets, one every ~350 ms so the board visibly fills.
+ *  Earlier voice-note tickets are replaced, so running it twice never duplicates the backlog. */
+export async function replay(opts: { staggerMs?: number } = {}): Promise<number> {
   const res = results();
   if (!res) throw new Error("No batch results yet");
   const items = new Map(manifest().map((m) => [m.file, m]));
+  for (const t of [...store.tickets.values()]) if (t.source === "voicenote") store.remove(t.id);
+  const stagger = opts.staggerMs ?? 350;
   let n = 0;
   for (const f of res.files) {
     const m = items.get(f.file);
@@ -88,7 +91,7 @@ export async function replay(): Promise<number> {
     });
     store.upsert(t);
     n++;
-    await new Promise((r) => setTimeout(r, 350));
+    if (stagger) await new Promise((r) => setTimeout(r, stagger));
   }
   return n;
 }

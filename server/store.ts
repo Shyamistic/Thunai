@@ -84,6 +84,13 @@ class Store {
     for (const other of this.tickets.values()) if (other.id !== t.id && other.cluster?.key === t.cluster?.key) this.emit("ticket", other);
   }
 
+  remove(id: string): void {
+    if (!this.tickets.delete(id)) return;
+    this.recluster();
+    this.persist();
+    this.emit("remove", { id });
+  }
+
   reset(): void {
     this.tickets.clear();
     this.seq = 41;

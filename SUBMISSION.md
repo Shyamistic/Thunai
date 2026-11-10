@@ -28,8 +28,10 @@ When the human lines are full, Thunai answers. Each caller turn is transcribed b
 [Name 1]: [e.g. backend: Prisma/Timbre integration, call flow, extraction rules, Batch pipeline, noise eval]
 [Name 2]: [e.g. frontend: control room, map board, ticket drawer, noise lab, demo video]
 
-**Live demo / code**
-[Render URL, if deployed] · [GitHub URL]. The "How it works" page (`/how`) explains the pipeline and every priority rule for reviewers.
+**Live demo / code / assets**
+- Live: https://thunai-ciw4.onrender.com (How it works: `/how`, Noise lab: `/lab`)
+- Code: https://github.com/Shyamistic/Thunai
+- Video and pitch: https://drive.google.com/drive/folders/13rj2HHqaVP4-oc30cbAMGWwxoX3FEACH?usp=drive_link
 
 **Measured results (synthetic data)**
 - Area named correctly at 5 dB SNR on an 8 kHz µ-law line: 71% without keyterms, 100% with Thunai's keyterms (24 clips per condition)
@@ -83,13 +85,13 @@ Tips:
 >
 > Limitations: synthetic data only, not connected to emergency services, and no barge-in yet.
 >
-> Demo below 👇 Code: [GitHub link]
+> Try it: https://thunai-ciw4.onrender.com · Code: https://github.com/Shyamistic/Thunai
 >
 > @Gnani.ai #GnaniAI #GreatIndianAIInternshipChallenge #Chennai #ChennaiRains #VoiceAI #Tamil
 
 ## 4. X post (280 chars)
 
-> Chennai's 1913 flood line jams every cyclone. Thunai answers the overflow: Tanglish calls on a noisy 8 kHz line → Gnani Prisma v3.0 → ranked tickets on a live map; Timbre v3.0 replies in Tamil. Place names: 71% → 100% with keyterms at 5 dB. @GnaniAI #GnaniAI #GreatIndianAIInternshipChallenge
+> Chennai's 1913 flood line jams every cyclone. Thunai answers the overflow: Tanglish calls on a noisy 8 kHz line → Gnani Prisma v3.0 → ranked tickets on a live map; Timbre v3.0 replies in Tamil. Place names: 71% → 100% with keyterms at 5 dB. thunai-ciw4.onrender.com @GnaniAI #GnaniAI #GreatIndianAIInternshipChallenge
 
 ---
 

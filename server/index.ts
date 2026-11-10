@@ -317,4 +317,10 @@ async function prewarm() {
 app.listen(env.port, () => {
   console.log(`[thunai] API on http://localhost:${env.port}  ·  Prisma v3.0 + Timbre v3.0  ·  ${KEYTERMS.length} keyterms  ·  LLM assist: ${llmEnabled() ? "on" : "off (rules only)"}`);
   setTimeout(() => void prewarm(), 1500);
+  // A visitor to the public demo should land on a working board, not an empty one.
+  if (PUBLIC && store.tickets.size === 0 && results()) {
+    replay({ staggerMs: 0 })
+      .then((n) => console.log(`[thunai] public demo: seeded the board with ${n} overnight voice notes`))
+      .catch(() => undefined);
+  }
 });

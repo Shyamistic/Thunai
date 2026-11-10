@@ -110,8 +110,14 @@ export function HowPage({ meta }: { meta: Meta | null }) {
           </div>
         </div>
 
-        <div className="mt-6 flex items-center gap-2 text-[12px] text-fog">
-          <GitBranch size={13} /> Source, eval scripts and README in the project repository. Built for the Gnani AI Great Indian AI Internship Challenge 2026 · #GnaniAI #GreatIndianAIInternshipChallenge
+        <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-fog">
+          <a href="https://github.com/Shyamistic/Thunai" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-mist hover:border-marigold hover:text-marigold">
+            <GitBranch size={13} /> github.com/Shyamistic/Thunai
+          </a>
+          <a href="https://drive.google.com/drive/folders/13rj2HHqaVP4-oc30cbAMGWwxoX3FEACH?usp=drive_link" target="_blank" rel="noreferrer" className="rounded-full border border-line px-3 py-1 text-mist hover:border-marigold hover:text-marigold">
+            Demo video and pitch
+          </a>
+          <span>Built for the Gnani AI Great Indian AI Internship Challenge 2026 · #GnaniAI #GreatIndianAIInternshipChallenge</span>
         </div>
       </div>
     </main>

@@ -28,6 +28,9 @@ When the human lines are full, Thunai answers. Each caller turn is transcribed b
 [Name 1]: [e.g. backend: Prisma/Timbre integration, call flow, extraction rules, Batch pipeline, noise eval]
 [Name 2]: [e.g. frontend: control room, map board, ticket drawer, noise lab, demo video]
 
+**Live demo / code**
+[Render URL, if deployed] · [GitHub URL]. The "How it works" page (`/how`) explains the pipeline and every priority rule for reviewers.
+
 **Measured results (synthetic data)**
 - Area named correctly at 5 dB SNR on an 8 kHz µ-law line: 71% without keyterms, 100% with Thunai's keyterms (24 clips per condition)
 - Median Prisma v3.0 processing time: about 200 ms per turn

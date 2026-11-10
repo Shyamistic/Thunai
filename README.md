@@ -5,6 +5,8 @@ When the 1913 lines are full, Thunai answers. Callers can speak Tamil, Tanglish,
 
 Built for the Gnani AI **Great Indian AI Internship Challenge 2026**. `#GnaniAI` `#GreatIndianAIInternshipChallenge`
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Shyamistic/Thunai)
+
 > **Synthetic demo data only.** No real callers, phone numbers, recordings, Aadhaar, PAN or account details appear anywhere. Caller numbers are `+91 00000 xxxxx` placeholders, and every demo voice is a Timbre voice.
 
 ---

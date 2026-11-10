@@ -1,0 +1,382 @@
+{
+  "jobId": "01a1c503-70a3-7485-8ddc-ea52155ea9ac",
+  "ranAt": 1794306723139,
+  "elapsedMs": 25085,
+  "config": {
+    "model": "prisma-v3.0",
+    "language_code": "ta-IN,en-IN,hi-IN,te-IN",
+    "format": "codemix",
+    "with_denoise": true,
+    "keyterms": "175 terms",
+    "topic": "flood helpline"
+  },
+  "files": [
+    {
+      "file": "voicenote-03.wav",
+      "transcript": "பெரம்பூரில் தண்ணி கணுக்கால் அளவு தான், ஆனால் நேற்று ராத்திரியிலிருந்து current இல்லை. குடிநீர் வேணும்.",
+      "lang": "ta-IN",
+      "duration": 6.68,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.076,
+          "end_time": 6.68,
+          "text": "பெரம்பூரில் தண்ணி கணுக்கால் அளவு தான், ஆனால் நேற்று ராத்திரியிலிருந்து current இல்லை. குடிநீர் வேணும்.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-19.wav",
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்ச அளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "lang": "ta-IN",
+      "duration": 5.24,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.044,
+          "end_time": 5.24,
+          "text": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்ச அளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-08.wav",
+      "transcript": "मैं शोलिंगनल्लूर में हूँ, construction site के पास। हम बीस मज़दूर फंसे हैं, पानी कमर तक है।",
+      "lang": "hi-IN",
+      "duration": 7.24,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0,
+          "end_time": 7.24,
+          "text": "मैं शोलिंगनल्लूर में हूँ, construction site के पास। हम बीस मज़दूर फंसे हैं, पानी कमर तक है।",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "hi-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-05.wav",
+      "transcript": "This is from Tambaram, near the railway station. Water is knee deep. We need food and milk for the baby.",
+      "lang": "en-IN",
+      "duration": 7.4,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.012,
+          "end_time": 7.4,
+          "text": "This is from Tambaram, near the railway station. Water is knee deep. We need food and milk for the baby.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "en-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-18.wav",
+      "transcript": "பள்ளிக்கரணை இல்லை, வேளச்சேரி main road பக்கத்தில் இன்னும் தண்ணி ஏறுது. இடுப்பளவு வயசானவங்க இருக்காங்க.",
+      "lang": "ta-IN",
+      "duration": 7.08,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.044,
+          "end_time": 7.08,
+          "text": "பள்ளிக்கரணை இல்லை, வேளச்சேரி main road பக்கத்தில் இன்னும் தண்ணி ஏறுது. இடுப்பளவு வயசானவங்க இருக்காங்க.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-04.wav",
+      "transcript": "கோட்டூர்புரம்ல அடையாறு river பக்கத்தில் தண்ணி ஏறிக்கிட்டே இருக்குது. இடுப்பு அளவு வந்துருச்சு, பாட்டி bed-டு.",
+      "lang": "ta-IN",
+      "duration": 7.16,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.076,
+          "end_time": 4.544,
+          "text": "கோட்டூர்புரம்ல அடையாறு river பக்கத்தில் தண்ணி ஏறிக்கிட்டே இருக்குது.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        },
+        {
+          "segment_id": 1,
+          "start_time": 4.544,
+          "end_time": 7.16,
+          "text": "இடுப்பு அளவு வந்துருச்சு, பாட்டி bed-டு.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-15.wav",
+      "transcript": "கொரட்டூர் lake பக்கத்தில் தண்ணி வீட்டுக்குள்ளே வந்துடுச்சு. அப்பாவுக்கு oxygen cylinder வேணும்.",
+      "lang": "ta-IN",
+      "duration": 7,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.044,
+          "end_time": 4.032,
+          "text": "கொரட்டூர் lake பக்கத்தில் தண்ணி வீட்டுக்குள்ளே வந்துடுச்சு.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        },
+        {
+          "segment_id": 1,
+          "start_time": 4.032,
+          "end_time": 6.944,
+          "text": "அப்பாவுக்கு oxygen cylinder வேணும்.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-01.wav",
+      "transcript": "அண்ணா, சைதாப்பேட்டை Jones Road பக்கத்தில் தண்ணி முட்டி அளவு வந்துடுச்சு. சாப்பாடு இல்லை, குழந்தைங்க இருக்காங்க.",
+      "lang": "ta-IN",
+      "duration": 7.4,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.012,
+          "end_time": 7.4,
+          "text": "அண்ணா, சைதாப்பேட்டை Jones Road பக்கத்தில் தண்ணி முட்டி அளவு வந்துடுச்சு. சாப்பாடு இல்லை, குழந்தைங்க இருக்காங்க.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-16.wav",
+      "transcript": "அடையாறு காந்தி நகரில் தண்ணி முட்டிய அளவு, எங்கள் தாத்தா heart patient.",
+      "lang": "ta-IN",
+      "duration": 5.48,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.044,
+          "end_time": 5.48,
+          "text": "அடையாறு காந்தி நகரில் தண்ணி முட்டிய அளவு, எங்கள் தாத்தா heart patient.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-09.wav",
+      "transcript": "அண்ணகி நகரில் எங்கள் block முழுக்க தண்ணி நின்ற அளவு. பத்து பேருக்கு மேலே இருக்கும்.",
+      "lang": "ta-IN",
+      "duration": 7,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.044,
+          "end_time": 4.832,
+          "text": "அண்ணகி நகரில் எங்கள் block முழுக்க தண்ணி நின்ற அளவு.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        },
+        {
+          "segment_id": 1,
+          "start_time": 4.832,
+          "end_time": 6.848,
+          "text": "பத்து பேருக்கு மேலே இருக்கும்.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-10.wav",
+      "transcript": "கொளத்தூரில் தண்ணி முட்டிய அளவு, மருந்து கடையெல்லாம் மூடியிருக்கு. அப்பா sugar patient, insulin வேணும்.",
+      "lang": "ta-IN",
+      "duration": 7.24,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.044,
+          "end_time": 7.24,
+          "text": "கொளத்தூரில் தண்ணி முட்டிய அளவு, மருந்து கடையெல்லாம் மூடியிருக்கு. அப்பா sugar patient, insulin வேணும்.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-17.wav",
+      "transcript": "Hello, we are in Manipalyam near Ramnagar. Water is waist level and we are five people.",
+      "lang": "en-IN",
+      "duration": 6.52,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.012,
+          "end_time": 6.52,
+          "text": "Hello, we are in Manipalyam near Ramnagar. Water is waist level and we are five people.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "en-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-06.wav",
+      "transcript": "புளியந்தோப்பில் ground floor full-ஆக போயிடுச்சு. மொட்டை மாடியில் இருக்கும் அஞ்சு பேர்.",
+      "lang": "ta-IN",
+      "duration": 6.2,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.076,
+          "end_time": 6.2,
+          "text": "புளியந்தோப்பில் ground floor full-ஆக போயிடுச்சு. மொட்டை மாடியில் இருக்கும் அஞ்சு பேர்.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-02.wav",
+      "transcript": "Hello, ஜாபர்கான்பேட்டையில் எங்கள் வீட்டுக்குள்ளே தண்ணி வந்துடுச்சு. வயதானவங்க ரெண்டு பேர் இருக்காங்க.",
+      "lang": "ta-IN",
+      "duration": 6.84,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.012,
+          "end_time": 6.84,
+          "text": "Hello, ஜாபர்கான்பேட்டையில் எங்கள் வீட்டுக்குள்ளே தண்ணி வந்துடுச்சு. வயதானவங்க ரெண்டு பேர் இருக்காங்க.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-20.wav",
+      "transcript": "నేను మనాలి నుండి మాట్లాడుతున్నాను. నీళ్ళు నడుము వరకు ఉన్నాయి. ముగ్గురు ఉన్నాం.",
+      "lang": "te-IN",
+      "duration": 5.64,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0,
+          "end_time": 5.64,
+          "text": "నేను మనాలి నుండి మాట్లాడుతున్నాను. నీళ్ళు నడుము వరకు ఉన్నాయి. ముగ్గురు ఉన్నాం.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "te-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-07.wav",
+      "transcript": "மயிலாப்பூர் loose பக்கத்தில் தண்ணி கணக்கு அளவு EV wires park ஆகுது, யாரும் பக்கத்தில் போக முடியலை.",
+      "lang": "ta-IN",
+      "duration": 7.56,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0,
+          "end_time": 7.56,
+          "text": "மயிலாப்பூர் loose பக்கத்தில் தண்ணி கணக்கு அளவு EV wires park ஆகுது, யாரும் பக்கத்தில் போக முடியலை.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-13.wav",
+      "transcript": "ஒக்கியம் துரைப்பாக்கம்ல வீட்டுக்குள்ளே நெஞ்சளவு தண்ணி மாட்டிக்கிட்டோம். boat அனுப்புங்கள், please.",
+      "lang": "ta-IN",
+      "duration": 7.24,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0,
+          "end_time": 7.24,
+          "text": "ஒக்கியம் துரைப்பாக்கம்ல வீட்டுக்குள்ளே நெஞ்சளவு தண்ணி மாட்டிக்கிட்டோம். boat அனுப்புங்கள், please.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-14.wav",
+      "transcript": "வேளச்சேரி தரமணி link road பக்கத்தில் car எல்லாம் மூழ்கிடுச்சு. தண்ணி இடுப்பு அளவு. வீட்டில் pregnant lady இருக்காங்க.",
+      "lang": "ta-IN",
+      "duration": 8.36,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.012,
+          "end_time": 8.36,
+          "text": "வேளச்சேரி தரமணி link road பக்கத்தில் car எல்லாம் மூழ்கிடுச்சு. தண்ணி இடுப்பு அளவு. வீட்டில் pregnant lady இருக்காங்க.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-12.wav",
+      "transcript": "மாதவரம்ல மரம் விழுந்து, current wire அறுந்து road-இல் கிடக்குது.",
+      "lang": "ta-IN",
+      "duration": 4.76,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.044,
+          "end_time": 4.76,
+          "text": "மாதவரம்ல மரம் விழுந்து, current wire அறுந்து road-இல் கிடக்குது.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "ta-IN"
+        }
+      ]
+    },
+    {
+      "file": "voicenote-11.wav",
+      "transcript": "Calling from Anna Nagar, our street is waterlogged ankle level, and there is no power since morning.",
+      "lang": "en-IN",
+      "duration": 7.16,
+      "segments": [
+        {
+          "segment_id": 0,
+          "start_time": 0.044,
+          "end_time": 7.16,
+          "text": "Calling from Anna Nagar, our street is waterlogged ankle level, and there is no power since morning.",
+          "speaker_id": 1,
+          "confidence": null,
+          "language_detected": "en-IN"
+        }
+      ]
+    }
+  ]
+}

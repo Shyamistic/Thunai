@@ -1,0 +1,3651 @@
+{
+  "ranAt": 1794307782961,
+  "model": "prisma-v3.0",
+  "conditions": [
+    "clean",
+    "10dB",
+    "5dB"
+  ],
+  "lines": 12,
+  "voices": [
+    "Devansh",
+    "Lakshmi"
+  ],
+  "summary": [
+    {
+      "condition": "clean",
+      "keyterms": true,
+      "n": 24,
+      "localityAcc": 1,
+      "fieldAcc": 0.9705882352941176,
+      "medianSttMs": 206
+    },
+    {
+      "condition": "clean",
+      "keyterms": false,
+      "n": 24,
+      "localityAcc": 0.7083333333333334,
+      "fieldAcc": 0.8676470588235294,
+      "medianSttMs": 203
+    },
+    {
+      "condition": "10dB",
+      "keyterms": true,
+      "n": 24,
+      "localityAcc": 1,
+      "fieldAcc": 1,
+      "medianSttMs": 199
+    },
+    {
+      "condition": "10dB",
+      "keyterms": false,
+      "n": 24,
+      "localityAcc": 0.7916666666666666,
+      "fieldAcc": 0.9117647058823529,
+      "medianSttMs": 201
+    },
+    {
+      "condition": "5dB",
+      "keyterms": true,
+      "n": 24,
+      "localityAcc": 1,
+      "fieldAcc": 1,
+      "medianSttMs": 207
+    },
+    {
+      "condition": "5dB",
+      "keyterms": false,
+      "n": 24,
+      "localityAcc": 0.7083333333333334,
+      "fieldAcc": 0.8676470588235294,
+      "medianSttMs": 193
+    }
+  ],
+  "rows": [
+    {
+      "id": "L01",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello, நான் பள்ளிக்கரணையிலிருந்து பேசுகிறேன். வீட்டுக்குள்ளே தண்ணி இடுப்பு அளவு வந்துடுச்சு. அம்மா bedridden.",
+      "got": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 240,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Devansh-clean.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello, நான் பள்ளிக்கரணையிலிருந்து பேசுகிறேன். வீட்டுக்குள்ளே தண்ணி இடுப்பு அளவு வந்துடுச்சு. அம்மா bedridden.",
+      "got": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 228,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Devansh-10dB.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello, நான் பள்ளிக்கரணையிலிருந்து பேசுகிறேன். வீட்டுக்குள்ளே தண்ணி எடுப்பு அளவு வந்துடுச்சு, அம்மா bed ridden.",
+      "got": {
+        "locality": "pallikaranai",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 219,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Devansh-10dB.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello, நான் பள்ளிக்கரணையிலிருந்து பேசுகிறேன். வீட்டுக்குள்ளே தண்ணி இடுப்பு அளவு வந்துடுச்சு. அம்மா bedridden.",
+      "got": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 233,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Devansh-5dB.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello, நான் பள்ளிக்கரணையிலிருந்து பேசுகிறேன். வீட்டுக்குள்ளே தண்ணி எடுப்பு அளவு வந்துடுச்சு, அம்மா bedridden.",
+      "got": {
+        "locality": "pallikaranai",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 233,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Devansh-5dB.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello, நான் பள்ளிக்கரணையில் இருந்து பேசுகிறேன். வீட்டுக்குள்ளே தண்ணி எடுப்பு அளவு வந்துடுச்சு, அம்மா bed ridden.",
+      "got": {
+        "locality": "pallikaranai",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 223,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Devansh-clean.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello நான் பள்ளிக்கரணையில் இருந்து பேசுறேன் வீட்டுக்குள்ள தண்ணி இடுப்பு அளவு வந்துடுச்சு அம்மா bedridden",
+      "got": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 214,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello, நான் பள்ளிக்கரணைல இருந்து பேசுகிறேன். வீட்டுக்குள்ளே தண்ணி இடுப்பு அளவு வந்துடுச்சு. அம்மா bedridden.",
+      "got": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 252,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello நான் பள்ளிக்கரணைல இருந்து பேசுறேன் வீட்டுக்குள்ள தண்ணி இடுப்பு அளவு வந்துடுச்சு அம்மா bedridden",
+      "got": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 222,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello, நான் பள்ளிக்கரணைலிருந்து பேசுகிறேன். வீட்டுக்குள்ளே தண்ணி இடுப்பு அளவு வந்துடுச்சு. அம்மா bedridden.",
+      "got": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 237,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello நான் பள்ளிக்கரணைல இருந்து பேசுறேன் வீட்டுக்குள்ள தண்ணி இடுப்பு அளவு வந்துடுச்சு அம்மா bedridden",
+      "got": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 204,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L01",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "transcript": "Hello, நான் பள்ளிக்கரணைல இருந்து பேசுறேன். வீட்டுக்குள்ளே தண்ணி இடுப்பு அளவு வந்துடுச்சு. அம்மா bedridden.",
+      "got": {
+        "locality": "pallikaranai",
+        "water": "waist",
+        "vulnerable": [
+          "bedridden"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 237,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L01-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "சார், முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு கைக்குழந்தை இருக்குது.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 203,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Devansh-clean.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "Sir, முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு கைக்குழந்தை இருக்கு.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 209,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Devansh-10dB.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "சார், முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு கைக்குழந்தை இருக்குது.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 201,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Devansh-10dB.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "Sir, முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு, கைக்குழந்தை இருக்குது.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 207,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Devansh-5dB.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "சார், முடிச்சூர்ல மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு கைக்குழந்தை இருக்குது.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 226,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Devansh-5dB.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "Sir, முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு, கைக்குழந்தை இருக்கு.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 230,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Devansh-clean.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "Sir, முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு, கைக்குழந்தை இருக்கு.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 238,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "சார், முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு, கை கொழந்தை இருக்குது.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "child"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 215,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "Sir, முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு, கைக்குழந்தை இருக்குது.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 216,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "Sir, முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு, கைக்குழந்தை இருக்குது.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 218,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "Sir, முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு, கைக்குழந்தை இருக்குது.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 216,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L02",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "transcript": "Sir, முடிச்சூரில் மொட்டை மாடியில் மாட்டிக்கிட்டோம். தண்ணி நெஞ்சளவு, கைக்குழந்தை இருக்குது.",
+      "got": {
+        "locality": "mudichur",
+        "water": "chest",
+        "vulnerable": [
+          "infant"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 213,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L02-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயநகர் பக்கத்தில் தண்ணி முட்டிய அளவு இருக்குது. நாங்கள் நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 203,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Devansh-clean.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயா நகர் பக்கத்தில் தண்ணி முட்டிய அளவு இருக்குது, நாங்கள் நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 197,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Devansh-clean.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயா நகர் பக்கத்தில் தண்ணி முட்டிய அளவு இருக்குது, நாங்கள் நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 213,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Devansh-10dB.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயநகர் பக்கத்தில் தண்ணி முட்டிய அளவு இருக்குது. நாங்கள் நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 196,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Devansh-10dB.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயா நகர் பக்கத்தில் தண்ணி முட்டிய அளவு இருக்குது, நாங்கள் நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 192,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Devansh-5dB.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயநகர் பக்கத்தில் தண்ணி முட்டிய அளவு இருக்குது. நாங்கள் நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 200,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Devansh-5dB.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயா நகர் பக்கத்தில் தண்ணி முட்டிய அளவு இருக்குது, நாங்கள் நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 204,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயநகர் பக்கத்தில் தண்ணி முட்டி அளவு இருக்கு. நாங்கள் நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 190,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயநகர் பக்கத்தில் தண்ணி முட்டி அளவு இருக்குது. நாங்கள் நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 194,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயநகர் பக்கத்தில் தண்ணி முட்டியளவு இருக்கு. நாங்க நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 191,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயநகர் பக்கத்தில் தண்ணி முட்டி அளவு இருக்குது. நாங்கள் நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 208,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L03",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4
+      },
+      "transcript": "வேளச்சேரி விஜயநகர் பக்கத்தில் தண்ணி முட்டியளவு இருக்கு, நாங்க நாலு பேர் இருக்கோம்.",
+      "got": {
+        "locality": "velachery",
+        "water": "knee",
+        "people": 4,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 205,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L03-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூரில் current wire தண்ணியில் விழுந்துடுச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 164,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Devansh-clean.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூரில் current wire தண்ணியில் விழுந்துடுச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 165,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Devansh-clean.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூரில் current wire தண்ணியில் விழுந்துடுச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 171,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Devansh-10dB.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூரில் current wire தண்ணியில் விழுந்துடுச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 183,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Devansh-10dB.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூரில் current wire தண்ணியில் விழுந்துடுச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 174,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Devansh-5dB.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூரில் current wire தண்ணியில் விழுந்துடுச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 171,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Devansh-5dB.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூர்ல current wire தண்ணியில் விழுந்துருச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 205,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூரில் current wire தண்ணியில் விழுந்துருச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 176,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூரில் current wire தண்ணியில் விழுந்துருச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 178,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூரில் current wire தண்ணியில் விழுந்துருச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 180,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "கொடுங்கையூரில் current wire தண்ணியில் விழுந்துருச்சு. தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "locality": "kodungaiyur",
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 157,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L04",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "kodungaiyur",
+        "water": "ankle"
+      },
+      "transcript": "குடும்ப ஊர்ல current wire தண்ணியில விழுந்துருச்சு, தண்ணி கணுக்கால் அளவு.",
+      "got": {
+        "water": "ankle",
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 1,
+      "fieldsTotal": 2,
+      "sttMs": 194,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L04-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்கள் தெரு முழுக்க தண்ணி. இடுப்பு அளவு. தாத்தா வயசானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 211,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Devansh-clean.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்கள் தெரு முழுக்க தண்ணி, இடுப்பு அளவு. தாத்தா வயசானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 226,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Devansh-clean.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்கள் தெரு முழுக்க தண்ணி. இடுப்பு அளவு. தாத்தா வயசானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 230,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Devansh-10dB.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்கள் தெரு முழுக்க தண்ணி, இடுப்பு அளவு. தாத்தா வயசானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 218,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Devansh-10dB.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்கள் தெரு முழுக்க தண்ணி, இடுப்பு அளவு. தாத்தா வயசானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 216,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Devansh-5dB.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்கள் தெரு முழுக்க தண்ணி. இடுப்பு அளவு. தாத்தா வயதானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 221,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Devansh-5dB.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்க தெரு முழுக்க தண்ணி, இடுப்பு அளவு. தாத்தா வயசானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 232,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்க தெரு முழுக்க தண்ணி, இடுப்பு அளவு. தாத்தா வயசானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 228,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்க தெரு முழுக்க தண்ணி, இடுப்பு அளவு. தாத்தா வயசானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 250,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்க தெரு முழுக்க தண்ணி, இடுப்பு அளவு, தாத்தா வயதானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 212,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்க தெரு முழுக்க தண்ணி, இடுப்பு அளவு. தாத்தா வயசானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 237,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L05",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "வரதராஜபுரம்ல எங்க தெரு முழுக்க தண்ணி, இடுப்பளவு, தாத்தா வயதானவர், நடக்க முடியாது.",
+      "got": {
+        "locality": "varadarajapuram",
+        "water": "waist",
+        "vulnerable": [
+          "elderly",
+          "disabled"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 206,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L05-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செம்மஞ்சேரியில் இருக்கோம். வீட்டுக்குள்ளே தண்ணி முட்டிய அளவு. dialysis patient இருக்காங்க, மருந்து வேணும்.",
+      "got": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 230,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Devansh-clean.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செம்மஞ்சேரியில் இருக்கோம். வீட்டுக்குள்ளே தண்ணி முட்டிய அளவு. dialysis patient இருக்காங்க, மருந்து வேணும்.",
+      "got": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 241,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Devansh-10dB.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செம்மஞ்சேரியில் இருக்கோம். வீட்டுக்குள்ளே தண்ணி முட்டியளவு dialysis patient இருக்காங்க, மருந்து வேணும்.",
+      "got": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 218,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Devansh-10dB.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செம்மஞ்சேரியில் இருக்கோம். வீட்டுக்குள்ளே தண்ணி முட்டி அழுது, dialysis patient இருக்காங்க. மருந்து வேணும்.",
+      "got": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 218,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Devansh-5dB.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செம்மஞ்சேரியில் இருக்கோம். வீட்டுக்குள்ளே தண்ணி முட்டியளவு dialysis patient இருக்காங்க, மருந்து வேணும்.",
+      "got": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 210,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Devansh-clean.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செம்மஞ்சேரியில் இருக்கோம். வீட்டுக்குள்ளே தண்ணி முட்டி அழுது, dialysis patient இருக்காங்க. மருந்து வேணும்.",
+      "got": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 231,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Devansh-5dB.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செம்மஞ்சேரி-ல இருக்கோம். வீட்டுக்குள்ள தண்ணி முட்டிய அளவு. dialysis patient இருக்காங்க, மருந்து வேணும்.",
+      "got": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 226,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செமஞ்சேரியில் இருக்கோம் வீட்டுக்குள்ள தண்ணி முட்டியளவு dialysis patient இருக்காங்க மருந்து வேணும்",
+      "got": {
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 196,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செம்மஞ்சேரியில் இருக்கோம். வீட்டுக்குள்ளே தண்ணி முட்டியளவு. dialysis patient இருக்காங்க, மருந்து வேணும்.",
+      "got": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 394,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செமஞ்சேரியில் இருக்கோம் வீட்டுக்குள்ள தண்ணி முட்டியளவு dialysis patient இருக்காங்க மருந்து வேணும்",
+      "got": {
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 183,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செம்மஞ்சேரியில் இருக்கோம். வீட்டுக்குள்ளே தண்ணி முட்டியளவு. dialysis patient இருக்காங்க, மருந்து வேணும்.",
+      "got": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 226,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L06",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "semmencherry",
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "transcript": "செமஞ்சேரியில் இருக்கோம் வீட்டுக்குள்ள தண்ணி முட்டியளவு dialysis patient இருக்காங்க மருந்து வேணும்",
+      "got": {
+        "water": "knee",
+        "vulnerable": [
+          "dialysis"
+        ]
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 192,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L06-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madipakkam near Ram Nagar. The water is waist level and we are five people.",
+      "got": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 208,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Devansh-clean.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madipakkam near Ram Nagar. The water is waist level and we are five people.",
+      "got": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 213,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Devansh-10dB.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madhipakkam near Ramnagar. The water is waist level and we are five people.",
+      "got": {
+        "locality": "ram-nagar",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 210,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Devansh-clean.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madipakkam near Ram Nagar. The water is waist level and we are five people.",
+      "got": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 200,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Devansh-5dB.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madhipakkam near Ramnagar. The water is waist level and we are 5 people.",
+      "got": {
+        "locality": "ram-nagar",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 197,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Devansh-5dB.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madhipakkam near Ramnagar. The water is waist level and we are 5 people.",
+      "got": {
+        "locality": "ram-nagar",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 205,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Devansh-10dB.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madipakkam near Ram Nagar. The water is waist level and we are five people.",
+      "got": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 205,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madipakkam near Ram Nagar. The water is waist level and we are five people.",
+      "got": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 192,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madhipakkam near Ramnagar. The water is waist level and we are five people.",
+      "got": {
+        "locality": "ram-nagar",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 177,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madipakkam near Ram Nagar. The water is waist level and we are five people.",
+      "got": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 211,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madhipakkam near Ramnagar. The water is waist level and we are five people.",
+      "got": {
+        "locality": "ram-nagar",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 180,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L07",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "madipakkam",
+        "water": "waist",
+        "people": 5
+      },
+      "transcript": "Hello, I am in Madhipakkam near Ramnagar. The water is waist level and we are 5 people.",
+      "got": {
+        "locality": "ram-nagar",
+        "water": "waist",
+        "people": 5,
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 189,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L07-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help, we are in Thoraipakkam. The water is chest deep and my grandmother is with us.",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 199,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Devansh-clean.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help, we are in Thurai Pakkam. The water is chest deep and my grandmother is with us.",
+      "got": {
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 221,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Devansh-clean.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help! We are in Thoraipakkam. The water is chest deep, and my grandmother is with us.",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 196,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Devansh-10dB.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help, we are in Thoraipakkam. The water is chest deep and my grandmother is with us.",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 200,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Devansh-10dB.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help! We are in Thoraibaka. The water is just deep, and my grandmother is with us.",
+      "got": {
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": false,
+      "fieldsOk": 1,
+      "fieldsTotal": 3,
+      "sttMs": 193,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Devansh-5dB.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help! We are in Thoraipakkam. The water is chest deep, and my grandmother is with us.",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 231,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Devansh-5dB.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help, we are in Thodai Parkam, the water is chest deep and my grandmother is with us.",
+      "got": {
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 198,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help, we are in Thoraipakkam. The water is chest deep and my grandmother is with us.",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 181,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help, we are in Thodai Pakkam. The water is chest deep and my grandmother is with us.",
+      "got": {
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 195,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help! We are in Thoraipakkam. The water is chest deep, and my grandmother is with us.",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 203,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help, we are in Thorai bunker. The water is chest deep and my grandmother is with us.",
+      "got": {
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 178,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L08",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "transcript": "Please help! We are in Thoraipakkam. The water is chest deep, and my grandmother is with us.",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "vulnerable": [
+          "elderly"
+        ]
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 199,
+      "lang": "en-IN",
+      "audio": "/api/eval/audio/L08-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं पेरुंगुड़ी में हूँ, पानी कमर तक है, हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 163,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Devansh-clean.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "மே Perungudiyur-இல், ஹூ பானி கமர் தக் ஹே. ஹம் தஸ் லோகேன்.",
+      "got": {
+        "locality": "perungudi",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 1,
+      "fieldsTotal": 3,
+      "sttMs": 222,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L09-Devansh-clean.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं पेरुंगुड़ी में हूँ, पानी कमर तक है, हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 154,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Devansh-10dB.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं Perungudi में हूँ। पानी कमर तक है। हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 147,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Devansh-10dB.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं Perungudi में हूँ। पानी कमर तक है। हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 149,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Devansh-5dB.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं पेरुंगुड़ी में हूँ, पानी कमर तक है, हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 154,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Devansh-5dB.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं पेरुंगुड़ी में हूँ, पानी कमर तक है, हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 165,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं Perungudi में हूँ। पानी कमर तक है। हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 157,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं पेरुंगुड़ी में हूँ, पानी कमर तक है, हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 154,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं Perungudi में हूँ। पानी कमर तक है। हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 151,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं पेरुंगुड़ी में हूँ, पानी कमर तक है, हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 168,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L09",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10
+      },
+      "transcript": "मैं Perungudi में हूँ। पानी कमर तक है। हम दस लोग हैं।",
+      "got": {
+        "locality": "perungudi",
+        "water": "waist",
+        "people": 10,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 143,
+      "lang": "hi-IN",
+      "audio": "/api/eval/audio/L09-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்சளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 176,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Devansh-clean.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்சளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 191,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Devansh-clean.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்சளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 171,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Devansh-10dB.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்சளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 176,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Devansh-10dB.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்சளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 176,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Devansh-5dB.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்சளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 167,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Devansh-5dB.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்ச அளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 178,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்ச அளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 178,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்ச அளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 168,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்ச அளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 206,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்ச அளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 175,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L10",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2
+      },
+      "transcript": "வியாசர்பாடி subway பக்கத்தில் தண்ணி நெஞ்ச அளவு, ரெண்டு பேர் மாட்டிக்கிட்டோம்.",
+      "got": {
+        "locality": "vyasarpadi",
+        "water": "chest",
+        "people": 2,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 164,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L10-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கே.கே. நகரில் மரம் விழுந்துடுச்சு. current இல்லை, தண்ணி முட்டியளவு.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 190,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Devansh-clean.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கே.கே. நகரில் மரம் விழுந்துடுச்சு. current இல்லை, தண்ணி முட்டி அளவு.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 207,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Devansh-10dB.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கேகே நகரில் மரம் விழுந்துடுச்சு, current இல்லை, தண்ணி முட்டியளவு.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 170,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Devansh-clean.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கேகே நகரில் மரம் விழுந்துடுச்சு, current இல்லை, தண்ணி முட்டியளவு.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 169,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Devansh-10dB.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கேகே நகரில் மரம் விழுந்துடுச்சு, current இல்லை, தண்ணி முட்டி அடவுது.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 179,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Devansh-5dB.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கே.கே. நகரில் மரம் விழுந்துடுச்சு. current இல்லை, தண்ணி முட்டி அடங்கும்.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 198,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Devansh-5dB.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கே.கே.நகர்-ல மரம் விழுந்துடுச்சு, current இல்ல, தண்ணி முட்டி அளவு.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 206,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கேகே நகர்ல மரம் விழுந்துடுச்சு current இல்ல தண்ணி முட்டிய அளவு.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 170,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கே.கே. நகரில் மரம் விழுந்துடுச்சு. current இல்லை, தண்ணி முட்டி அளவு.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 193,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கேகே நகர்ல மரம் விழுந்துடுச்சு current இல்ல தண்ணி முட்டியளவு",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 173,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கேகே நகர்ல மரம் விழுந்துடுச்சு, current இல்ல, தண்ணி முட்டியளவு.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 174,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L11",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "kknagar",
+        "water": "knee"
+      },
+      "transcript": "கே.கே. நகரில் மரம் விழுந்துடுச்சு. current இல்லை, தண்ணி முட்டிய அளவு.",
+      "got": {
+        "locality": "kknagar",
+        "water": "knee",
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 2,
+      "fieldsTotal": 2,
+      "sttMs": 186,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L11-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஒக்கியம் துரைப்பாக்கம்ல நெஞ்சளவு தண்ணி, மூணு பேர் மாட்டிக்கிட்டோம். boat அனுப்புங்கள்.",
+      "got": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 210,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Devansh-clean.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஒக்கியம் துரைப்பாக்கம்ல நெஞ்சளவு தண்ணி. மூணு பேர் மாட்டிக்கிட்டோம், boat அனுப்புங்கள்.",
+      "got": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 223,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Devansh-10dB.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Devansh",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஒக்கியம் துரைப்பாக்கம்ல நெஞ்சளவு தண்ணி, மூணு பேர் மாட்டிக்கிட்டோம். boat அனுப்புங்கள்.",
+      "got": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 218,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Devansh-10dB.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Devansh",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஒக்கியம் துரைப்பாக்கம்ல நெஞ்சளவு தண்ணி. மூணு பேர் மாட்டிக்கிட்டோம், boat அனுப்புங்கள்.",
+      "got": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 198,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Devansh-clean.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "பொக்கியம் துரைப்பாக்கம்ல நெஞ்சளவு தண்ணி, மூணு பேர் மாட்டிக்கிட்டோம். boat அனுப்புங்கள்.",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 202,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Devansh-5dB.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Devansh",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஒக்கியம் துரைப்பாக்கம்ல நெஞ்சளவு தண்ணி. மூணு பேர் மாட்டிக்கிட்டோம், boat அனுப்புங்கள்.",
+      "got": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 222,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Devansh-5dB.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": true,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஒக்கியம் துரைப்பாக்கம்-ல நெஞ்ச அளவு தண்ணி, மூணு பேர் மாட்டிக்கிட்டோம், boat அனுப்புங்க.",
+      "got": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 211,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Lakshmi",
+      "condition": "clean",
+      "keyterms": false,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஓக்கியம் துரைப்பாக்கம்ல நெஞ்சளவு தண்ணி, மூணு பேர் மாட்டிக்கிட்டோம், போட் அனுப்புங்க.",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 224,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Lakshmi-clean.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஒக்கியம் துரைப்பாக்கம்ல நெஞ்ச அளவு தண்ணி, மூணு பேர் மாட்டிக்கிட்டோம், boat அனுப்புங்க.",
+      "got": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 199,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Lakshmi",
+      "condition": "10dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஓக்கியம் துரைப்பாக்கம்ல நெஞ்சளவு தண்ணி, மூணு பேர் மாட்டிக்கிட்டோம், boat அனுப்புங்க.",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 210,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Lakshmi-10dB.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": true,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஒக்கியம் துரைப்பாக்கம்ல நெஞ்ச அளவு தண்ணி, மூணு பேர் மாட்டிக்கிட்டோம், boat அனுப்புங்க.",
+      "got": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": true,
+      "fieldsOk": 3,
+      "fieldsTotal": 3,
+      "sttMs": 204,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Lakshmi-5dB.wav"
+    },
+    {
+      "id": "L12",
+      "voice": "Lakshmi",
+      "condition": "5dB",
+      "keyterms": false,
+      "truth": {
+        "locality": "okkiyam",
+        "water": "chest",
+        "people": 3
+      },
+      "transcript": "ஓக்கியம் துரைப்பாக்கம்ல நெஞ்சளவு தண்ணி, மூணு பேர் மாட்டிக்கிட்டோம், boat அனுப்புங்க",
+      "got": {
+        "locality": "thoraipakkam",
+        "water": "chest",
+        "people": 3,
+        "vulnerable": []
+      },
+      "localityOk": false,
+      "fieldsOk": 2,
+      "fieldsTotal": 3,
+      "sttMs": 197,
+      "lang": "ta-IN",
+      "audio": "/api/eval/audio/L12-Lakshmi-5dB.wav"
+    }
+  ]
+}
